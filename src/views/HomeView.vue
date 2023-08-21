@@ -1,20 +1,42 @@
 <template>
-  <div class="home">
-  <Navbar/>
-  <Banner/>
+  <div class="home q-mx-xl">
+    <Navbar />
+    <section>
+      <Banner />
+    </section>
+    <Services />
+    <Menu />
+    <Testimonials />
+    <Reservations />
   </div>
+  <Footer />
 </template>
 
 <script>
-// @ is an alias to /src
-import Navbar from '@/components/NavbarComponent.vue'
-import Banner from '@/components/BannerComponent.vue'
+import Navbar from "@/components/NavbarComponent.vue";
+import Banner from "@/components/BannerComponent.vue";
+import Services from "@/components/ServicesSection.vue";
+import Menu from "@/components/MenuSection.vue";
+import Testimonials from "@/components/TestimonialsSection.vue";
+import Reservations from "@/components/ReservationsSection.vue";
+import Footer from "@/components/FooterComponent.vue";
 
 export default {
-  name: 'HomeView',
+  name: "HomeView",
   components: {
     Navbar,
-    Banner
-  }
-}
+    Banner,
+    Services,
+    Menu,
+    Testimonials,
+    Reservations,
+    Footer,
+  },
+};
 </script>
+
+<style lang="scss" scoped>
+section {
+  margin: 0 150px;
+}
+</style>

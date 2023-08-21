@@ -1,13 +1,16 @@
 {
-  "name": "beckio",
+  "name": "now_online",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
+  "author": "Fred Fonseca",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@phosphor-icons/vue": "^2.1.6",
     "@quasar/extras": "^1.0.0",
     "core-js": "^3.8.3",
     "quasar": "^2.0.0",
